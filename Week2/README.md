@@ -42,7 +42,7 @@ For this question, train two models: a non-regularized LinearRegression model (d
 *This function should return one tuple (LinearRegression_R2_test_score, Lasso_R2_test_score)*
 
 
-# Part 2 - Classification
+## Part 2 - Classification
 
 Here's an application of machine learning that could save your life! For this section of the assignment we will be working with the [UCI Mushroom Data Set](http://archive.ics.uci.edu/ml/datasets/Mushroom?ref=datanews.io) stored in readonly/mushrooms.csv. The data will be used to train a model to predict whether or not a mushroom is poisonous. The following attributes are provided:
 
