@@ -58,7 +58,7 @@ Split the DataFrame into X (the data) and y (the labels).
 
 ## Question 4
 
-  Using ```train_test_split```, `split X´ and y into training and test sets (X_train, X_test, y_train, and y_test).
+  Using ```train_test_split```, split X and y into training and test sets (X_train, X_test, y_train, and y_test).
 
 **Set the random number generator state to 0 using random_state=0 to make sure your results match the autograder!**
 
@@ -68,6 +68,17 @@ Split the DataFrame into X (the data) and y (the labels).
 * X_test *has shape* (143, 30)
 * y_train *has shape* (426,)
 * y_test *has shape* (143,)
+
+
+## Question 5
+
+Using KNeighborsClassifier, fit a k-nearest neighbors (knn) classifier with X_train, y_train and using one nearest neighbor (n_neighbors = 1).
+
+*This function should return a* sklearn.neighbors.classification.KNeighborsClassifier.
+
+
+
+
 
 
 
