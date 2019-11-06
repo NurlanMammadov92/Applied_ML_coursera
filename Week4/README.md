@@ -66,6 +66,7 @@ compliance [target variable for prediction]
  * Null = Not responsible
  * 0 = Responsible, non-compliant
  * 1 = Responsible, compliant
+ 
 compliance_detail - More information on why each ticket was marked compliant or non-compliant\
 
 ---
@@ -84,16 +85,16 @@ For this assignment, create a function that trains a model to predict blight tic
 
 Example:
 
-ticket_id\
-    284932     0.531842\
-    285362     0.401958\
-    285361     0.105928\
-    285338     0.018572\
-               ...\
-    376499     0.208567\
-    376500     0.818759\
-    369851     0.018528\
-   Name: compliance, dtype: float32
+    ticket_id
+       284932    0.531842
+       285362    0.401958
+       285361    0.105928
+       285338    0.018572
+                 ...
+       376499    0.208567
+       376500    0.818759
+       369851    0.018528
+       Name: compliance, dtype: float32
 
 
 ## Hints
