@@ -20,11 +20,9 @@ Convert the sklearn.dataset cancer to a DataFrame.
 *This function should return a (569, 31) DataFrame with*
 
 *columns* =
-['mean radius','mean texture','mean perimeter','mean area,
 
-'mean concave points']
 
-['mean radius', 'mean texture', 'mean perimeter', 'mean area',
+['mean radius', 'mean texture', 'mean perimeter', 'mean area',\n
 'mean smoothness', 'mean compactness', 'mean concavity',
 
 'mean concave points', 'mean symmetry', 'mean fractal dimension',
