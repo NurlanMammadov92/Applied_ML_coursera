@@ -16,14 +16,12 @@ How many features does the breast cancer dataset have?
 
 Scikit-learn works with lists, numpy arrays, scipy-sparse matrices, and pandas DataFrames, so converting the dataset to a DataFrame is not necessary for training this model. Using a DataFrame does however help make many things easier such as munging data, so let's practice creating a classifier with a pandas DataFrame
 
-Convert the sklearn.dataset cancer to a DataFrame.
-*This function should return a (569, 31) DataFrame with*
+Convert the sklearn.dataset cancer to a DataFrame.\*This function should return a (569, 31) DataFrame with*
 
 *columns* =
 
 
-['mean radius', 'mean texture', 'mean perimeter', 'mean area',\n
-'mean smoothness', 'mean compactness', 'mean concavity',
+['mean radius', 'mean texture', 'mean perimeter', 'mean area',\'mean smoothness', 'mean compactness', 'mean concavity',
 
 'mean concave points', 'mean symmetry', 'mean fractal dimension',
 
