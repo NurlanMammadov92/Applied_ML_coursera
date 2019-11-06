@@ -44,7 +44,7 @@ For this question, train two models: a non-regularized LinearRegression model (d
 
 # Part 2 - Classification
 
-Here's an application of machine learning that could save your life! For this section of the assignment we will be working with the[UCI Mushroom Data Set](http://archive.ics.uci.edu/ml/datasets/Mushroom?ref=datanews.io) stored in readonly/mushrooms.csv. The data will be used to train a model to predict whether or not a mushroom is poisonous. The following attributes are provided:
+Here's an application of machine learning that could save your life! For this section of the assignment we will be working with the [UCI Mushroom Data Set](http://archive.ics.uci.edu/ml/datasets/Mushroom?ref=datanews.io) stored in readonly/mushrooms.csv. The data will be used to train a model to predict whether or not a mushroom is poisonous. The following attributes are provided:
 
 *Attribute Information:*
 
@@ -73,7 +73,60 @@ Here's an application of machine learning that could save your life! For this se
 
 
 
-The data in the mushrooms dataset is currently encoded with strings. These values will need to be encoded to numeric to work with sklearn. We'll use pd.get_dummies to convert the categorical variables into indicator variables.
+The data in the mushrooms dataset is currently encoded with strings. These values will need to be encoded to numeric to work with sklearn. We'll use `pd.get_dummies` to convert the categorical variables into indicator variables.
+
+
+## Question 5
+
+
+Using `X_train2` and `y_train2` from the preceeding cell, train a DecisionTreeClassifier with default parameters and random_state=0. What are the 5 most important features found by the decision tree?
+
+As a reminder, the feature names are available in the `X_train2.columns` property, and the order of the features in `X_train2.columns` matches the order of the feature importance values in the classifier's `feature_importances_` property.
+
+*This function should return a list of length 5 containing the feature names in descending order of importance.*
+
+*Note: remember that you also need to set random_state in the DecisionTreeClassifier.*
+
+
+
+## Question 6
+
+For this question, we're going to use the `validation_curve` function in `sklearn.model_selection` to determine training and test scores for a Support Vector Classifier (SVC) with varying parameter values. Recall that the validation_curve function, in addition to taking an initialized unfitted classifier object, takes a dataset as input and does its own internal train-test splits to compute results.
+
+**Because creating a validation curve requires fitting multiple models, for performance reasons this question will use just a subset of the original mushroom dataset: please use the variables X_subset and y_subset as input to the validation curve function (instead of X_mush and y_mush) to reduce computation time.**
+
+The initialized unfitted classifier object we'll be using is a Support Vector Classifier with radial basis kernel. So your first step is to create an SVC object with default parameters (i.e. `kernel='rbf'`, `C=1`) and `random_state=0`. Recall that the kernel width of the RBF kernel is controlled using the gamma parameter.
+
+With this classifier, and the dataset in X_subset, y_subset, explore the effect of gamma on classifier accuracy by using the `validation_curve` function to find the training and test scores for 6 values of gamma from 0.0001 to 10 (i.e. `np.logspace(-4,1,6))`. Recall that you can specify what scoring metric you want validation_curve to use by setting the "scoring" parameter. In this case, we want to use "accuracy" as the scoring metric.
+
+For each level of gamma, `validation_curve` will fit 3 models on different subsets of the data, returning two 6x3 (6 levels of gamma x 3 fits per level) arrays of the scores for the training and test sets.
+
+Find the mean score across the three models for each level of gamma for both arrays, creating two arrays of length 6, and return a tuple with the two arrays.
+
+e.g.
+
+if one of your array of scores is
+
+array([[ 0.5,  0.4,  0.6],
+       [ 0.7,  0.8,  0.7],
+       [ 0.9,  0.8,  0.8],
+       [ 0.8,  0.7,  0.8],
+       [ 0.7,  0.6,  0.6],
+       [ 0.4,  0.6,  0.5]])
+
+
+it should then become
+
+array([ 0.5,  0.73333333,  0.83333333,  0.76666667,  0.63333333, 0.5])
+
+*This function should return one tuple of numpy arrays (training_scores, test_scores) where each array in the tuple has shape (6,).*
+
+
+
+
+
+
+
 
 
 
