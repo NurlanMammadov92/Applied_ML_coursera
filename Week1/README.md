@@ -72,18 +72,32 @@ Split the DataFrame into X (the data) and y (the labels).
 
 ## Question 5
 
-Using KNeighborsClassifier, fit a k-nearest neighbors (knn) classifier with X_train, y_train and using one nearest neighbor (n_neighbors = 1).
+Using KNeighborsClassifier, fit a k-nearest neighbors (knn) classifier with `X_train`, `y_train` and using one nearest neighbor (n_neighbors = 1).
 
 *This function should return a* sklearn.neighbors.classification.KNeighborsClassifier.
 
 
 
+## Question 6
+
+Using your knn classifier, predict the class label using the mean value for each feature.
+
+Hint: You can use cancerdf.mean()[:-1].values.reshape(1, -1) which gets the mean value for each feature, ignores the target column, and reshapes the data from 1 dimension to 2 (necessary for the precict method of KNeighborsClassifier).
+
+*This function should return a numpy array either array([ 0.]) or array([ 1.])*
 
 
+## Question 7
+
+Using your knn classifier, predict the class labels for the test set `X_test`.
+
+*This function should return a numpy array with shape (143,) and values either 0.0 or 1.0.*
 
 
+## Question 8
 
+Find the score (mean accuracy) of your knn classifier using `X_test` and `y_test`.
 
-
+*This function should return a float between 0 and 1*
 
 
