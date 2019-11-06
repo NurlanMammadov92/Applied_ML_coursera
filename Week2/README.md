@@ -27,7 +27,7 @@ Write a function that fits a polynomial LinearRegression model on the training d
 
 Based on the  **R^2**  scores from question 2 (degree levels 0 through 9), what degree level corresponds to a model that is underfitting? What degree level corresponds to a model that is overfitting? What choice of degree level would provide a model with good generalization performance on this dataset?
 
-Hint: Try plotting the **R^2** scores from question 2 to visualize the relationship between degree level and **R^2**. Remember to comment out the import matplotlib line before submission.
+Hint: Try plotting the **R^2** scores from question 2 to visualize the relationship between degree level and **R^2** $R^2$. Remember to comment out the import matplotlib line before submission.
 
 *This function should return one tuple with the degree values in this order: (Underfitting, Overfitting, Good_Generalization). There might be multiple correct solutions, however, you only need to return one possible solution, for example, (1,2,3).*
 
