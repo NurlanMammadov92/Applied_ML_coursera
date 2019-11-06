@@ -18,11 +18,21 @@ The figure above shows the fitted models plotted on top of the original data (us
 
 ## Question 2
 
-Write a function that fits a polynomial LinearRegression model on the training data `X_train` for degrees 0 through 9. For each model compute the  <$\R^2$>  (coefficient of determination) regression score on the training data as well as the the test data, and return both of these arrays in a tuple.
+Write a function that fits a polynomial LinearRegression model on the training data `X_train` for degrees 0 through 9. For each model compute the  **R^2** (coefficient of determination) regression score on the training data as well as the the test data, and return both of these arrays in a tuple.
 
-This function should return one tuple of numpy arrays (r2_train, r2_test). Both arrays should have shape (10,)
+*This function should return one tuple of numpy arrays (r2_train, r2_test). Both arrays should have shape (10,)*
 
-$n^2$	
+
+## Question 3
+
+Based on the  **R^2**  scores from question 2 (degree levels 0 through 9), what degree level corresponds to a model that is underfitting? What degree level corresponds to a model that is overfitting? What choice of degree level would provide a model with good generalization performance on this dataset?
+
+Hint: Try plotting the **R^2** scores from question 2 to visualize the relationship between degree level and **R^2**. Remember to comment out the import matplotlib line before submission.
+
+*This function should return one tuple with the degree values in this order: (Underfitting, Overfitting, Good_Generalization). There might be multiple correct solutions, however, you only need to return one possible solution, for example, (1,2,3).*
+
+
+
 
 
 
