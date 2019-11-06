@@ -107,11 +107,11 @@ e.g.
 
 if one of your array of scores is
 
-array([[ 0.5,  0.4,  0.6],
-       [ 0.7,  0.8,  0.7],
-       [ 0.9,  0.8,  0.8],
-       [ 0.8,  0.7,  0.8],
-       [ 0.7,  0.6,  0.6],
+array([[ 0.5,  0.4,  0.6],\
+       [ 0.7,  0.8,  0.7],\
+       [ 0.9,  0.8,  0.8],\
+       [ 0.8,  0.7,  0.8],\
+       [ 0.7,  0.6,  0.6],\
        [ 0.4,  0.6,  0.5]])
 
 
@@ -122,9 +122,13 @@ array([ 0.5,  0.73333333,  0.83333333,  0.76666667,  0.63333333, 0.5])
 *This function should return one tuple of numpy arrays (training_scores, test_scores) where each array in the tuple has shape (6,).*
 
 
+## Question 7
 
+Based on the scores from question 6, what gamma value corresponds to a model that is underfitting (and has the worst test set accuracy)? What gamma value corresponds to a model that is overfitting (and has the worst test set accuracy)? What choice of gamma would be the best choice for a model with good generalization performance on this dataset (high accuracy on both training and test set)?
 
+Hint: Try plotting the scores from question 6 to visualize the relationship between gamma and accuracy. Remember to comment out the import matplotlib line before submission.
 
+*This function should return one tuple with the degree values in this order: (Underfitting, Overfitting, Good_Generalization) Please note there is only one correct solution.*
 
 
 
