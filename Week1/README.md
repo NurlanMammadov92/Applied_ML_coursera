@@ -38,28 +38,3 @@ Convert the sklearn.dataset cancer to a DataFrame.
 
 RangeIndex(start=0, stop=569, step=1)
 
-
-## Question 2
-
-What is the class distribution? (i.e. how many instances of malignant (encoded 0) and how many benign (encoded 1)?)
-
-*This function should return a Series named target of length 2 with integer values and index = ['malignant', 'benign']*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
