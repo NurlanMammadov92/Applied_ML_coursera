@@ -18,11 +18,9 @@ The figure above shows the fitted models plotted on top of the original data (us
 
 ## Question 2
 
-Write a function that fits a polynomial LinearRegression model on the training data `X_train` for degrees 0 through 9. For each model compute the  $\R^2$  (coefficient of determination) regression score on the training data as well as the the test data, and return both of these arrays in a tuple.
+Write a function that fits a polynomial LinearRegression model on the training data `X_train` for degrees 0 through 9. For each model compute the  <$\R^2$>  (coefficient of determination) regression score on the training data as well as the the test data, and return both of these arrays in a tuple.
 
 This function should return one tuple of numpy arrays (r2_train, r2_test). Both arrays should have shape (10,)
-
-$\sum x_{i}$
 
 
 
