@@ -58,7 +58,7 @@ Split the DataFrame into X (the data) and y (the labels).
 
 ## Question 4
 
-Using train_test_split, split X and y into training and test sets (X_train, X_test, y_train, and y_test).
+  Using `train_test_split`, split X and y into training and test sets (X_train, X_test, y_train, and y_test).
 
 **Set the random number generator state to 0 using random_state=0 to make sure your results match the autograder!**
 
@@ -66,8 +66,8 @@ Using train_test_split, split X and y into training and test sets (X_train, X_te
 
 * X_train *has shape* (426, 30)
 * X_test *has shape* (143, 30)
-- y_train *has shape* (426,)
-- y_test *has shape* (143,)
+* y_train *has shape* (426,)
+* y_test *has shape* (143,)
 
 
 
