@@ -47,7 +47,7 @@ train.csv & test.csv
     disposition - Judgment and judgement type
     fine_amount - Violation fine amount, excluding fees
     admin_fee - $20 fee assigned to responsible judgments
-state_fee - $10 fee assigned to responsible judgments
+    state_fee - $10 fee assigned to responsible judgments
     late_fee - 10% fee assigned to responsible judgments
     discount_amount - discount applied, if any
     clean_up_cost - DPW clean-up or graffiti removal cost
