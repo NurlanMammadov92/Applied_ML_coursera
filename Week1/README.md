@@ -45,3 +45,12 @@ What is the class distribution? (i.e. how many instances of malignant (encoded 0
 
 *This function should return a Series named target of length 2 with integer values and index* = ['malignant', 'benign']
 
+
+## Question 3
+
+Split the DataFrame into X (the data) and y (the labels).
+
+*This function should return a tuple of length 2*: (X, y), *where*
+
+* X, *a pandas DataFrame, has shape* (569, 30)
+- y, *a pandas Series, has shape* (569,).
