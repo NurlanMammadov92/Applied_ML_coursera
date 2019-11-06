@@ -22,6 +22,7 @@ Convert the sklearn.dataset cancer to a DataFrame.
 columns =
 
 ['mean radius', 'mean texture', 'mean perimeter', 'mean area',
+
 'mean smoothness', 'mean compactness', 'mean concavity',
 'mean concave points', 'mean symmetry', 'mean fractal dimension',
 'radius error', 'texture error', 'perimeter error', 'area error',
@@ -31,7 +32,8 @@ columns =
 'worst smoothness', 'worst compactness', 'worst concavity',
 'worst concave points', 'worst symmetry', 'worst fractal dimension',
 'target']
-and index =
+
+*and index* =
 
 RangeIndex(start=0, stop=569, step=1)
 
@@ -40,7 +42,7 @@ RangeIndex(start=0, stop=569, step=1)
 
 What is the class distribution? (i.e. how many instances of malignant (encoded 0) and how many benign (encoded 1)?)
 
-*This function should return a Series named target of length 2 with integer values and index = ['malignant', 'benign']
+*This function should return a Series named target of length 2 with integer values and index = ['malignant', 'benign']*
 
 
 
