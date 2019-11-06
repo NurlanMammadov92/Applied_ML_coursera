@@ -52,5 +52,4 @@ Split the DataFrame into X (the data) and y (the labels).
 
 *This function should return a tuple of length 2*: (X, y), *where*
 
-* X, *a pandas DataFrame, has shape* (569, 30)\
-- y, *a pandas Series, has shape* (569,).
+* X, *a pandas DataFrame, has shape* (569, 30) \- y, *a pandas Series, has shape* (569,).
