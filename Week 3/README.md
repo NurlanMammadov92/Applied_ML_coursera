@@ -60,7 +60,7 @@ Perform a grid search over the parameters listed below for a Logisitic Regressio
 
 From `.cv_results_`, create an array of the mean test scores of each parameter combination. i.e.
 
-|      |l1 |l2|
+|      |**l1** |**l2**|
 | -- |:-------------:| -----:|
 |0.01| ? | ?|
 |0.1|?|?|
