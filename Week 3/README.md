@@ -60,17 +60,20 @@ Perform a grid search over the parameters listed below for a Logisitic Regressio
 
 From `.cv_results_`, create an array of the mean test scores of each parameter combination. i.e.
 
-
-                                                                   |      |**l1** |**l2**|
-                                                                   | -- |:-------------:| -----:|
-                                                                   |**0.01**| ? | ?|
-|**0.1**|?|?|
-|**1**|? |? |
-|**10**|? |? |
-|**100**|? |? |
-
+|      	| `l1` 	| `l2` 	|
+|:----:	|----	|----	|
+| **`0.01`** 	|    ?	|   ? 	|
+| **`0.1`**  	|    ?	|   ? 	|
+| **`1`**    	|    ?	|   ? 	|
+| **`10`**   	|    ?	|   ? 	|
+| **`100`**   	|    ?	|   ? 	|
 
 
+<br>
+
+*This function should return a 5 by 2 numpy array with 10 floats.* 
+
+*Note: do not return a DataFrame, just the values denoted by '?' above in a numpy array. You might need to reshape your raw result to meet the format we are looking for.*
 
 
 
