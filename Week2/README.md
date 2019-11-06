@@ -22,7 +22,7 @@ Write a function that fits a polynomial LinearRegression model on the training d
 
 This function should return one tuple of numpy arrays (r2_train, r2_test). Both arrays should have shape (10,)
 
-
+$n^2$	
 
 
 
