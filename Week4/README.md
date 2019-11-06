@@ -33,7 +33,7 @@ readonly/addresses.csv & readonly/latlons.csv - mapping from ticket id to addres
 
 **Data fields**
 
-train.csv & test.csv
+`train.csv` & `test.csv`
 
 ticket_id - unique identifier for tickets\
 agency_name - Agency that issued the ticket\
@@ -57,17 +57,16 @@ grafitti_status - Flag for graffiti violations\
 
 train.csv only
 
-payment_amount - Amount paid, if any\
-payment_date - Date payment was made, if it was received\
-payment_status - Current payment status as of Feb 1 2017\
-balance_due - Fines and fees still owed\
-collection_status - Flag for payments in collections\
-compliance [target variable for prediction] 
- * Null = Not responsible
- * 0 = Responsible, non-compliant
- * 1 = Responsible, compliant
- 
-compliance_detail - More information on why each ticket was marked compliant or non-compliant\
+    payment_amount - Amount paid, if any
+    payment_date - Date payment was made, if it was received
+    payment_status - Current payment status as of Feb 1 2017
+    balance_due - Fines and fees still owed
+    collection_status - Flag for payments in collections
+    compliance [target variable for prediction] 
+     Null = Not responsible
+     0 = Responsible, non-compliant
+     1 = Responsible, compliant
+    compliance_detail - More information on why each ticket was marked compliant or non-compliant
 
 ---
 
