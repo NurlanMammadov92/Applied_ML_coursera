@@ -21,6 +21,7 @@ Convert the sklearn.dataset cancer to a DataFrame.
 
 *columns* =
 ['mean radius','mean texture','mean perimeter','mean area,
+
 'mean concave points']
 
 ['mean radius', 'mean texture', 'mean perimeter', 'mean area',
